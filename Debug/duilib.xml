@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,300" sizebox="4,4,4,4" caption="0,0,0,32" mininfo="4,0">
+    <VerticalLayout bkcolor="#FFF0F0F0" bkcolor2="#FFAAAAA0" >
+        <HorizontalLayout height="32" bkcolor="#FFE6E6DC" bkcolor2="#FFAAAAA0">
+           
+            <VerticalLayout>
+                <Label float="true" text="赫夫曼编码转换器" pos="4,3,0,0" width="125" height="28" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            </VerticalLayout>
+            <VerticalLayout width="77">
+                <Button name="minbtn" tooltip="最小化" float="true" pos="22,5,0,0" width="23" height="19" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;SysBtn\MinNormal.bmp&apos; " hotimage=" file=&apos;SysBtn\MinFocus.bmp&apos; " pushedimage=" file=&apos;SysBtn\MinFocus.bmp&apos; " />
+                <Button name="closebtn" tooltip="关闭" float="true" pos="44,5,0,0" width="28" height="19" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;SysBtn\CloseNormal.bmp&apos; " hotimage=" file=&apos;SysBtn\CloseFocus.bmp&apos; " pushedimage=" file=&apos;SysBtn\CloseFocus.bmp&apos; " />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <VerticalLayout>
+                <Label text="权值：(空格隔开)" float="true" pos="10,32,0,0" width="105" height="33"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Edit name="num"  float="true" pos="129,30,0,0" width="255" height="33" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+
+
+
+
+           <List name="ListDemo1" float="true" pos="19,135,0,0" width="368" height="124" bkcolor="#FFFFFFFF" vscrollbar="true" itemtextcolor="#FF000000" itembkcolor="#FFE2DDDF" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" >
+                <ListHeader name="domain" bkimage="List/list_header_bg.png">
+                    <ListHeaderItem text="序号" width="40" height="23" minwidth="16"  sepwidth="1" align="center" hotimage="List/list_header_hot.png" pushedimage="List/list_header_pushed.png" sepimage="List/list_header_sep.png" />
+					<ListHeaderItem text="权值" width="84" height="23" minwidth="16"  sepwidth="1" align="center" hotimage="List/list_header_hot.png" pushedimage="List/list_header_pushed.png" sepimage="List/list_header_sep.png" />
+                    <ListHeaderItem text="赫夫曼编码" width="84" height="23" minwidth="16"  sepwidth="1" align="center" hotimage="List/list_header_hot.png" pushedimage="List/list_header_pushed.png" sepimage="List/list_header_sep.png" />
+                </ListHeader>
+              
+            </List>
+
+				 <Label text="哈夫曼编码：" float="true" pos="10,100,0,0" width="105" height="33"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Button name="go" float="true" text="转换" pos="296,79,0,0" width="70" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage=" file=&apos;SysBtn\button_nor.bmp&apos; "  hotimage=" file=&apos;button_nor.bmp&apos; " align="center" />
+            </VerticalLayout>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>
